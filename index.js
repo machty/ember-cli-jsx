@@ -4,8 +4,8 @@ var react  = require('broccoli-react');
 
 function ReactPlugin(options) {
   this.name = 'ember-cli-jsx';
-  this.ext = options.extensions || 'jsx';
   this.options = options || {};
+  this.ext = this.options.extensions || 'jsx';
 }
 
 ReactPlugin.prototype.toTree = function(tree) {
