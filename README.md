@@ -1,0 +1,19 @@
+## ember-cli-jsx
+
+This addon inserts adds `jsx` processing into the javascript preprocessor for Ember CLI.
+
+### Installation / Usage
+
+From within your Ember CLI application (must be > 0.0.34), run the following:
+
+```bash
+npm install --save-dev ember-cli-jsx
+```
+
+That's all. You can now use ES6 syntax supported by `jsx` in your `.jsx`
+files.
+
+### References
+
+* [broccoli-react](https://github.com/eddhannay/broccoli-react)
+

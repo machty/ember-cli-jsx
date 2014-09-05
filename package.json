@@ -1,0 +1,25 @@
+{
+  "name": "ember-cli-jsx",
+  "version": "0.0.1",
+  "description": "Use jsx to preprocess your ember-cli app's files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ember-addon"
+  ],
+  "author": "Alex Matchneer <machty@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/machty/ember-cli-jsx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/machty/ember-cli-jsx/issues"
+  },
+  "homepage": "https://github.com/machty/ember-cli-jsx"
+}
+
