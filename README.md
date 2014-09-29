@@ -13,6 +13,11 @@ npm install --save-dev ember-cli-jsx
 That's all. You can now use ES6 syntax supported by `jsx` in your `.jsx`
 files.
 
+#### Note
+
+You will need to add React to your project's bower.json and reference it in your Brocfile
+in order to actually use React.
+
 ### References
 
 * [broccoli-react](https://github.com/eddhannay/broccoli-react)

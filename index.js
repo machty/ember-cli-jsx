@@ -2,31 +2,16 @@
 
 var react  = require('broccoli-react');
 
-function ReactPlugin(options) {
-  this.name = 'ember-cli-jsx';
-  this.options = options || {};
-  this.ext = this.options.extensions || 'jsx';
-}
-
-ReactPlugin.prototype.toTree = function(tree) {
-  return react(tree, this.options);
+module.exports = {
+  name: 'ember-cli-jsx',
+  included: function (app) {
+    this._super.included.apply(this, arguments);
+    app.registry.add('js', {
+      name: 'ember-cli-jsx',
+      ext: 'jsx',
+      toTree: function (tree) {
+        return react(tree, app.options.reactOptions);
+      }
+    });
+  }
 };
-
-function EmberCLIJSX(project) {
-  this.project = project;
-  this.name    = 'Ember CLI JSX';
-}
-
-EmberCLIJSX.prototype.treeFor = function treeFor() {
-};
-
-EmberCLIJSX.prototype.included = function included(app) {
-  var registry = app.registry;
-  this.app = app;
-
-  var plugin = new ReactPlugin(this.app.options.jsxOptions);
-
-  registry.add('jsx', plugin);
-};
-
-module.exports = EmberCLIJSX;
