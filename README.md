@@ -15,7 +15,7 @@ files.
 
 #### Note
 
-You will need to add React to your project's bower.json and referece it in your Brocfile
+You will need to add React to your project's bower.json and reference it in your Brocfile
 in order to actually use React.
 
 ### References
