@@ -3,6 +3,9 @@
   "version": "0.0.2",
   "description": "Use jsx to preprocess your ember-cli app's files.",
   "main": "index.js",
+  "ember-addon": {
+    "main": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
